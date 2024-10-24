@@ -216,15 +216,15 @@ function showMessage(message, color, isWrong = false) {
 
     setTimeout(() => {
         messageElement.style.opacity = 1;
-    }, 100);
+    }, 80);
 
     setTimeout(() => {
         messageElement.style.opacity = 0;
         setTimeout(() => {
             messageElement.remove();
             fadeOutBackgroundAndRedirect();
-        }, 500);
-    }, 10000);
+        }, 450);
+    }, 4500);
 }
 
 function fadeOutBackgroundAndRedirect() {
@@ -236,7 +236,7 @@ function fadeOutBackgroundAndRedirect() {
     document.body.style.opacity = 0;
 
     setTimeout(() => {
-        window.location.href = "https://incandescent-syrniki-95478a.netlify.app//";
+        window.location.href = "https://shimmering-souffle-97c393.netlify.app/";
     }, 1000);
 }
 
