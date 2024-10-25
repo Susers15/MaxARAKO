@@ -182,13 +182,13 @@ document.getElementById('next').onclick = () => {
             // スコアをチェック
             if (score === totalQuestions) {
                 playSound('correctSound'); // 満点の音
-                showMessage("やったね👍→右に行ってね。", "white");
+                showMessage("やったね👍出口に行こう。", "white");
             } else if (score === 0) {
                 playSound('wrongSound'); // 不正解の音
-                showMessage("お疲れ様👍↑前に行ってね", "white", true);
+                showMessage("お疲れ様👍出口に行こう", "white", true);
             } else {
                 playSound('correctSound'); // 1/2正解の音
-                showMessage("やったね👍→右に行ってね", "white");
+                showMessage("やったね👍→出口に行こう", "white");
             }
         }, 500);
     }
